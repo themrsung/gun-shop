@@ -10,11 +10,137 @@ body {
 .header {
     background: linear-gradient(70deg, lightblue, gold);
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    margin-left: 3%;
+    margin-right: auto;
+}
+
+.title {
+    white-space: nowrap;
+}
+
+.nav-bar {
+    margin-left: auto;
+}
+
+.nav-bar-ul {
+    list-style: none;
+
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav-bar-ul > li {
+    margin: 10px;
+}
+
+.nav-bar-ul > li > button {
+    padding: 10px 25px;
+    border-radius: 7px;
+
+    background-color: transparent;
+    border-color: transparent;
+    font-size: large;
+
+    transition: linear 0.2s;
+}
+
+.nav-bar-ul > li > button:hover {
+    border-color: black;
+}
+ 
+.atlas-logo {
+    height: 7vh;
+}
+
+.wrap {
+    margin: 1.5vh 0px;
+}
+
+.featured-items-ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+
+    flex-wrap: wrap;
+
+    padding: 0px;
+}
+
+
+.footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3vh 0px;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.1);
 }
 
 @media(width >= 1000px) {
     .header {
         height: 7vh;
+    }
+
+    .title {
+        margin-left: 3%;
+    }
+
+    .nav-bar-hamburger-button {
+        display: none;
+        height: 7vh;
+    }
+
+    .wrap {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
+
+    .featured-item {
+        width: 18.5%;
+        margin: 5px;
+    }
+    
+    .featured-item > img {
+        width: 100%;
+        height: 20vh;
+        object-fit: contain;
+    }
+    
+    .featured-item > h3 {
+        text-align: center
+    }
+
+
+
+    .footer {
+        height: 15vh;
     }
 }
 
@@ -28,24 +154,42 @@ body {
     }
 
     .title {
-        margin: auto;
-
+        margin-right: auto;
     }
-}
 
-.title-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
+    .nav-bar {
+        margin-left: auto;
+        margin-right: 3%;
+    }
 
-    height: 100%;
-}
+    .nav-bar-ul {
+        display: none;
+    }
 
-.atlas-logo {
-    height: 100%;
-}
+    .nav-bar-hamburger-button {
+        height: 3vh;
+    }
 
-.title {
-    height: 100%;
+    .wrap {
+        margin: auto;
+    }
+
+    .featured-item {
+        width: 27%;
+        margin: 5px auto;
+    }
+    
+    .featured-item > img {
+        width: 100%;
+        height: 20vh;
+        object-fit: contain;
+    }
+    
+    .featured-item > h3 {
+        text-align: center
+    }
+
+    .footer {
+        height: 30vh;
+    }
 }
