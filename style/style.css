@@ -85,6 +85,10 @@ body {
     padding: 0px;
 }
 
+.featured-item:hover {
+    cursor: pointer;
+}
+
 
 .footer {
     width: 100%;
