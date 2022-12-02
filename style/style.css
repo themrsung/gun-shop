@@ -1,0 +1,51 @@
+* {
+    font-family: 'Cinzel', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background: linear-gradient(70deg, lightblue, gold);
+
+}
+
+@media(width >= 1000px) {
+    .header {
+        height: 7vh;
+    }
+}
+
+@media(width < 1000px) {
+    .header {
+        height: 5vh;
+    }
+
+    .atlas-logo {
+        display: none;
+    }
+
+    .title {
+        margin: auto;
+
+    }
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    height: 100%;
+}
+
+.atlas-logo {
+    height: 100%;
+}
+
+.title {
+    height: 100%;
+}
