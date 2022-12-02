@@ -26,6 +26,10 @@ body {
     margin-right: auto;
 }
 
+.title-container:hover {
+    cursor: pointer;
+}
+
 .title {
     white-space: nowrap;
 }
@@ -172,6 +176,10 @@ body {
 
     .nav-bar-hamburger-button {
         height: 3vh;
+    }
+
+    .nav-bar-hamburger-button:hover {
+        cursor: pointer;
     }
 
     .wrap {
